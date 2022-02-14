@@ -51,7 +51,7 @@ services:
     container_name: "discovery-service"
     image: discovery-service.jar
     build:
-      context: "./"
+      context: "${DISCOVERY_CONTEXT}"
       dockerfile: "Dockerfile"
     ports:
       - "8761:8761"
